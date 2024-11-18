@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Objednávka</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Dokončení objednávky</h1>
+    <form id="orderForm">
+      <div class="field">
+        <label for="cardNumber">Platební karta</label>
+        <input type="text" id="cardNumber" required />
+      </div>
+
+      <div class="field">
+        <label for="delivery">Doprava</label>
+        <select id="delivery" required>
+          <option value="pobocka">vyzvednout na pobočce</option>
+          <option value="zasilkovna">Zásilkovna</option>
+          <option value="posta">Česká pošta</option>
+          <option value="ppl">PPL</option>
+        </select>
+      </div>
+
+      <div class="controls">
+        <button type="submit">Odeslat objednávku</button>
+      </div>
+      <p id="errorMessage" style="color: red; display: none;"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
