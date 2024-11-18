@@ -12,7 +12,7 @@
     <form id="orderForm">
       <div class="field">
         <label for="cardNumber">Platební karta</label>
-        <input type="text" id="cardNumber" required />
+        <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required />
       </div>
 
       <div class="field">
@@ -28,7 +28,7 @@
       <div class="controls">
         <button type="submit">Odeslat objednávku</button>
       </div>
-      <p id="errorMessage" style="color: red; display: none;"></p>
+      <p id="errorMessage" class="error-message" style="display: none;"></p>
     </form>
   </div>
   <script src="script.js"></script>
